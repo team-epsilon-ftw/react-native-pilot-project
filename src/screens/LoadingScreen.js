@@ -7,6 +7,7 @@ const LoadingScreen = () => {
   const goToSettings = () => {
     navigation.navigate("Settings");
   };
+  //For testing
 
   const styles = StyleSheet.create({
     container: {
