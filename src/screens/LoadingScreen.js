@@ -4,8 +4,8 @@ import { useNavigation } from "@react-navigation/native";
 
 const LoadingScreen = () => {
   const navigation = useNavigation();
-  const goToSettings = () => {
-    navigation.navigate("Settings");
+  const goToPackages = () => {
+    navigation.navigate("Screen3");
   };
   //For testing
 
@@ -30,7 +30,7 @@ const LoadingScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View>{<Button title="Go to Settings" onPress={goToSettings} />}</View>
+      <View>{<Button title="Go to Packages" onPress={goToPackages} />}</View>
       <View style={styles.imageContainer}>
         <Image
           source={require("./../../assets/loadScreen/icon.jpg")}
