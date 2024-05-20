@@ -28,7 +28,7 @@ const HomeScreen = () => {
       <Text style={styles.title}>Locate. Select. Drive.</Text>
       <Text style={styles.subtitle}>The perfect driving school is just a tap away!</Text>
       <Image
-        source={require('./images/img1.png')}
+        source={require('./assets/homeScreen/img1.png')}
         style={styles.image}
       />
       {/* Text box around location button */}
