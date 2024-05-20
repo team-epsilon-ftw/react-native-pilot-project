@@ -4,7 +4,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import HomeScreen from '../src/screens/HomeScreen';
 import SearchScreen from '../src/screens/SearchScreen';
 import NotificationsScreen from '../src/screens/NotificationsScreen';
-import SettingsScreen from '../src/screens/SettingsScreen';
+import SettingScreen from '../src/screens/SettingScreen';
 import ProfileScreen from '../src/screens/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
@@ -42,7 +42,7 @@ function BottomTabNavigator() {
       />
       <Tab.Screen 
         name="Settings" 
-        component={SettingsScreen} 
+        component={SettingScreen} 
         options={{
           tabBarIcon: ({ color, size }) => (
             <FontAwesome5 name="cog" color={color} size={size} />
