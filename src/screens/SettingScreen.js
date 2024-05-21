@@ -11,8 +11,8 @@ const SettingScreen = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      paddingVertical: 35, // 40 units of padding vertically
-      paddingHorizontal: 0, // 0 units of padding horizontally
+      // paddingVertical: 35, // 40 units of padding vertically
+      // paddingHorizontal: 0, // 0 units of padding horizontally
     },
   });
   return (
