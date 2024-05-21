@@ -4,7 +4,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoadingScreen from "./src/screens/LoadingScreen";
 import SettingScreen from "./src/screens/SettingScreen";
-import Screen3 from "./src/screens/Screen3";
+import HomeScreen from "./src/screens/HomeScreen";
+import NotificationScreen from "./src/screens/NotificationsScreen";
+import ProfileScreen from "./src/screens/ProfileScreen";
+import SearchScreen from "./src/screens/SearchScreen";
+
 
 const Stack = createStackNavigator();
 
@@ -17,7 +21,10 @@ export default function App() {
         screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Loading" component={LoadingScreen} />
         <Stack.Screen name="Settings" component={SettingScreen} />
-        <Stack.Screen name="Screen3" component={Screen3} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Notification" component={NotificationScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Search" component={SearchScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
