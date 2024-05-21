@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 const SettingScreen = () => {
   const navigation = useNavigation();
   const goToLoadingScreen = () => {
-    navigation.navigate("Screen3");
+    navigation.navigate("Loading");
   };
 
   const styles = StyleSheet.create({
