@@ -2,6 +2,18 @@ import React from "react";
 import { Button, View, Image, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "./../../configs/firebaseConfig";
+
+const fetchData = async () => {
+  const querySnapshot = await getDocs(collection(db, "test"));
+  querySnapshot.forEach((doc) => {
+    console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+  });
+};
+
+fetchData();
+
 const LoadingScreen = () => {
   const navigation = useNavigation();
 
