@@ -6,6 +6,7 @@ import SearchScreen from '../src/screens/SearchScreen';
 import NotificationsScreen from '../src/screens/NotificationsScreen';
 import SettingScreen from '../src/screens/SettingScreen';
 import ProfileScreen from '../src/screens/ProfileScreen';
+import PackageScreen from '../src/screens/PackageScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +15,7 @@ function BottomTabNavigator() {
     <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'purple' }}>
       <Tab.Screen 
         name="Home" 
-        component={HomeScreen} 
+        component={PackageScreen} 
         options={{
           headerShown: false,
           tabBarIcon: ({ color, size }) => (

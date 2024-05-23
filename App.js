@@ -8,6 +8,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import NotificationScreen from "./src/screens/NotificationsScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
 import SearchScreen from "./src/screens/SearchScreen";
+import BottomTabNavigator from "./components/BottomTabNavigator";
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name="Notification" component={NotificationScreen} />
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="Package" component={BottomTabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );
