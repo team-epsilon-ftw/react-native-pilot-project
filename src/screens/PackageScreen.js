@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Packages from '../../components/PackagesBox';
 import DotNavigation from '../../components/DotNavigation';
 import Options from '../../components/OptionsBox';
-import styles from '../../screen3styles';
+import styles from '../styles/screen3styles';
 import NavBar from '../../components/NavBar'
 
 const DrivingSchoolApp = () => {

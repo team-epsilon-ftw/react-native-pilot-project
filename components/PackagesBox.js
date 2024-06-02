@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, FlatList } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import styles from '../screen3styles';
+import styles from '../src/styles/screen3styles';
 
 const packages = [
   { id: '1', number: '01', title: 'Individual Package', price: 'Rs. 30,000.00' },
