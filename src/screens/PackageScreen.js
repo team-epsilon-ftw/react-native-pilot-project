@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import Header from '../../components/Header';
-import Packages from '../../components/Packages';
+import Packages from '../../components/PackagesBox';
 import DotNavigation from '../../components/DotNavigation';
-import Options from '../../components/Options';
+import Options from '../../components/OptionsBox';
 import styles from '../../screen3styles';
+import NavBar from '../../components/NavBar'
 
 const DrivingSchoolApp = () => {
   return (
@@ -14,6 +15,7 @@ const DrivingSchoolApp = () => {
       <Packages />
       <DotNavigation currentIndex={0} />
       <Options />
+      <NavBar/>
     </View>
   );
 };

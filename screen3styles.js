@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   packageContainer: {
     padding: 15,
-    flex: 1,
+    width: 150,
     marginRight: 10,
     borderRadius: 10,
     shadowColor: '#B2BEB5',
